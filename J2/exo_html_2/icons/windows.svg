@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #c5c5c5 } 
+	</style>
+	<g id="Section 7 tarifs">
+		<g id="01">
+			<path id="fa-windows" class="shp0" d="M9.89 12.86L9.89 12.86L0.38 12.86L0.38 20.63L9.89 21.94L9.89 12.86ZM9.89 2.5L0.38 3.81L0.38 11.69L9.89 11.69L9.89 2.5ZM23.58 12.86L10.93 12.86L10.93 22.08L23.58 23.82L23.58 12.86ZM23.58 0.61L10.93 2.36L10.93 11.69L23.58 11.69L23.58 0.61Z" />
+		</g>
+	</g>
+</svg>
