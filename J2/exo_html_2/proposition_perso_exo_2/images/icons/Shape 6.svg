@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18" width="24" height="18">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Footer">
+		<path id="Shape 6" class="shp0" d="M23.22 0L6.52 16.46L0.78 10.8L0 11.57L6.52 18L24 0.77L23.22 0Z" />
+	</g>
+</svg>

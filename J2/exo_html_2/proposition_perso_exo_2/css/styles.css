@@ -1,0 +1,426 @@
+@import url(//db.onlinewebfonts.com/c/3177708be8009248a009820150bd4970?family=Merriweather);
+@font-face 
+{
+    font-family: "Merriweather"; src: url("//db.onlinewebfonts.com/t/3177708be8009248a009820150bd4970.eot"); 
+    src: url("//db.onlinewebfonts.com/t/3177708be8009248a009820150bd4970.eot?#iefix") format("embedded-opentype"), 
+         url("//db.onlinewebfonts.com/t/3177708be8009248a009820150bd4970.woff2") format("woff2"), 
+         url("//db.onlinewebfonts.com/t/3177708be8009248a009820150bd4970.woff") format("woff"), 
+         url("//db.onlinewebfonts.com/t/3177708be8009248a009820150bd4970.ttf") format("truetype"), 
+         url("//db.onlinewebfonts.com/t/3177708be8009248a009820150bd4970.svg#Merriweather") format("svg");
+} 
+
+body
+{
+    font-family: 'Open Sans', calibri, sans-serif;
+}
+
+@media (min-width: 1260px) /* pour garder une bordure autour du container */
+{
+    .container
+    {
+
+        max-width: 1230px;
+
+    }
+}
+
+h1
+{
+    color : #ffffff;
+	font-size: 48px;
+}
+
+h3
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+p
+{
+	font-size : 12px;
+	text-align: justify;
+}
+
+a
+{
+	font-weight: bold;
+}
+
+ul
+{
+	padding-left: 0px;
+}
+
+li
+{
+	list-style: none;
+	font-weight: normal;
+	font-size : 12px;
+}
+
+#header
+{
+	position: relative;
+	height: 801.8px; /* env 1519.2*950/1800 */
+}
+
+#header:after
+{
+	content: "";
+	position: absolute;
+	background: url("../images/hero1.png") center no-repeat;
+	background-size: auto 801.8px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	filter: brightness(1.2);
+	z-index: -1;
+}
+
+#logo
+{
+	font-family: 'Merriweather', calibri, sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#iphone
+{
+	width: 100%;
+	max-width: 604px; /* 1519*716/1800 */
+	height: auto;
+	max-height: 800px;
+}
+
+#iphonexs
+{
+	display: none;
+}
+
+#our_clients
+{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/our_clients.png") center no-repeat;
+}
+
+#sign_up
+{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/sign_up1.png") center no-repeat;
+	background-size: 100%;
+}
+
+.boites
+{
+	width: 400px; /* choix de la maquette*/
+	height: 278px;
+}
+
+#full_image
+{
+	background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/car1.png") no-repeat;
+	background-size: auto 875px;
+	height: 873px; 	/* valeur maquette à 875px mais image cropped à 873px */
+}
+
+#more_pixel
+{
+	height: 873px;
+}
+
+@media (width < 1200px)
+{
+	#header
+	{
+		position: relative;
+		height: 700px; /* compromis pour préserver la disposition voulue, taille théorique 1200 * 950 / 1800 */
+	}
+
+	#header:after
+	{
+		content: "";
+		position: absolute;
+		background: url("../images/hero1.png") no-repeat;
+		background-position: top 0% right 10%;
+		background-size: auto 700px; 
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		filter: brightness(1.2);
+		z-index: -1;
+	}
+	
+	h1
+	{
+		font-size: 40px;
+	}
+	
+	h2
+	{
+		font-size: 25px;
+	}
+	
+	.boites
+	{
+		max-height: 222px; /* pour garder la proportion de la maquette*/
+	}
+	
+	#full_image
+	{
+		background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/car1.png") no-repeat;
+		background-size: auto 600px;
+		height: 600px; 	/* choix arbitraire pour positionner l'image */
+	}
+	
+	#more_pixel
+	{
+		height: 600px;
+	}
+}
+
+@media (width < 1100px)
+{
+	#header
+	{
+		position: relative;
+		height: 700px; /* on ne change pas les mesures car on est entre deux breakpoints, compromis pour préserver la disposition voulue, taille théorique 1200 * 950 / 1800 */
+	}
+
+	#header:after
+	{
+		content: "";
+		position: absolute;
+		background: url("../images/hero1.png") no-repeat;
+		background-position: top 0% right 30%; /* recentrer l'image */
+		background-size: auto 700px; 
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		filter: brightness(1.2);
+		z-index: -1;
+	}
+}
+
+@media (width < 992px)
+{
+	#header
+	{
+		position: relative;
+		height: 523px; /* env 991 * 950 / 1800 */
+	}
+
+	#header:after
+	{
+		content: "";
+		position: absolute;
+		background: url("../images/hero1.png") center no-repeat;
+		background-size: auto 523px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		filter: brightness(1.2);
+		z-index: -1;
+	}
+	
+	h1
+	{
+		font-size: 40px;
+	}
+
+	h2
+	{
+		font-size: 25px;
+	}
+	
+	.boites
+	{
+		max-height: 220px; /* choix arbitraire pour garder une belle proportion */
+	}
+
+	#full_image
+	{
+		background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/car1.png") no-repeat;
+		background-size: auto 500px;
+		height: 500px; 	/* choix arbitraire pour positionner l'image */
+	}
+
+	#more_pixel
+	{
+		height: 500px;
+	}
+}
+
+@media (width < 948px)
+{
+	#header
+	{
+		position: relative;
+		height: 500px; /* compromis pour préserver la disposition, taille théorique env 991 * 950 / 1800 */
+	}
+
+	#header:after
+	{
+		content: "";
+		position: absolute;
+		background: url("../images/hero1.png") center no-repeat;
+		background-size: auto 500px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		filter: brightness(1.2);
+		z-index: -1;
+	}
+}
+
+@media (width < 768px)
+{
+	#header
+	{
+		position: relative;
+		height: 404.8px; /* 950*767/1800 */
+	}
+
+	#header:after
+	{
+		content: "";
+		position: absolute;
+		background: url("../images/hero1.png") center no-repeat;
+		background-size: auto 404.8px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		filter: brightness(1.2);
+		z-index: -1;
+	}
+
+	h1
+	{
+		font-size: 35px;
+	}
+	
+	.boites
+	{
+		max-height: 256px; /* choix arbitraire pour garder une belle proportion*/
+	}
+
+	#sign_up
+	{
+		background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/sign_up1.png") center no-repeat;
+	}
+
+	#full_image
+	{
+		background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/car1.png") no-repeat;
+		background-size: auto 400px;
+		height: 400px; 	/* choix arbitraire pour positionner l'image */
+	}
+
+	#more_pixel
+	{
+		height: 400px;
+	}
+}
+
+@media (width < 576px)
+{
+	#header
+	{
+		position: relative;
+		height: 900px; /* choix arbitraire pour positionner l'image */
+		max-height: 950px;
+	}
+	
+	#header:after
+	{
+		content: "";
+		position: absolute;
+		background: url("../images/hero2.png") center no-repeat;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		filter: brightness(1);
+		z-index: -1;
+	}
+
+	#iphone
+	{
+		display: none;
+	}
+
+	#iphonexs
+	{
+		display: inline;
+		width: 100%;
+		height: auto;
+	} 
+
+	#sign_up
+	{
+		background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/sign_up1.png") center no-repeat;
+	}
+
+	.boites 
+	{
+		max-width: 315px; /* choix arbitraire pour garder une belle proportion*/
+		max-height: 256px;
+	}
+}
+
+#tarifs
+{
+	background-color: #f6f7fa;
+	/* height: 562px; */
+}
+
+span
+{
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.abonnement
+{
+	background-color: #ffffff;
+}
+
+.pink
+{
+    background-color: #f5979c;
+}
+
+.purple
+{
+    background-color: #615e7d;
+}
+
+.lightpurple
+{
+    background-color: #bd8bbf;
+}
+
+.green
+{
+    background-color: #81c99c;
+}
+
+.blue
+{
+    background-color: #192331;
+}
+
+.white
+{
+    color: #ffffff;
+}
+
+.grey
+{
+    background: #e1e1e1;
+}
