@@ -1,5 +1,6 @@
-body {
+body, input:is([type="submit"], [type="reset"]) {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 form {
@@ -24,7 +25,7 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 0.7rem;
-  border: thin solid silver;
+  border: 3px solid #595959;
   border-radius: 0.15rem;
   font-family: Roboto, Arial, sans-serif;
   color: #222;
@@ -61,7 +62,8 @@ input[type="reset"] {
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background-color: #45a049;
+  background-color: #317335;
+  font-weight: bold;
 }
 
 /* Stylise les champs de formulaire lorsqu'ils sont invalides ou valides */
@@ -81,15 +83,15 @@ textarea {
   /* Empêche le redimensionnement horizontal proposé par défaut par le  navigateur */
 }
 
-fieldset {
-  margin: 1.5rem 0;
-  border: thin solid silver;
-  border-radius: 0.15rem;
+/* Réaction au focus et au survol */
+
+input:not(:is([type="submit"],[type="reset"])):hover, textarea:hover, input:focus, textarea:focus {
+  border-width: 5px;
 }
 
-legend {
-  font-style: italic;
-  color: #666;
+/* Affichage du message d'erreur */
+.error-message {
+  display: none;
 }
 
 @media (max-width: 600px) {
